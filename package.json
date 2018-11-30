@@ -1,0 +1,23 @@
+{
+  "name": "proper-encode-uri",
+  "version": "1.0.0",
+  "description": "RFC3986 and RFC5987 compliant ES6 rewrite of the encodeURI and encodeURIComponent functions. Works in all modern browsers including IE11.",
+  "main": "src/proper-encode-uri.js",
+  "author": "Mewes Kochheim",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
